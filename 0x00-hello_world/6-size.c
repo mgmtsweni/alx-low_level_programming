@@ -3,10 +3,8 @@
 /**
 *
 * main - the program starts and ends here
-*
-* Description: the program starts and ends here.
+* 
 * Return: value 0 when Successful
-*
 */
 
 int main(void)
