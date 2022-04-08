@@ -16,9 +16,9 @@ int main(void)
 	{
 		capture = Alpha;
 		Alpha++;
-	}
 	if (capture != 'q' && capture != 'e')
 		putchar(capture);
+	}
 	putchar('\n');
 	return (0);
 }
