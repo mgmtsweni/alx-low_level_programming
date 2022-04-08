@@ -1,11 +1,9 @@
 #include <stdio.h>
 
 /**
-* 
-* main - the program starts and ends here
-* Return: value 0 when Successful
+* main - main block
+* Return: 0
 */
-
 int main(void)
 {
 printf("Size of a char: %d byte(s)\n", sizeof(char));
