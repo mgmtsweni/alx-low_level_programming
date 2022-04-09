@@ -29,5 +29,6 @@ int main(void)
 		doubles++;
 	}
 	putchar('\n');
+
 	return (0);
 }
