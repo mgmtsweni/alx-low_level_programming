@@ -10,9 +10,9 @@ int	main(void)
 	int i;
 
 	i = 0;
-	while (a[i] != '\0')
+	while (c[i] != '\0')
 	{
-		_putchar(a[i]);
+		_putchar(c[i]);
 		i++;
 	}
 	_putchar('\n');
