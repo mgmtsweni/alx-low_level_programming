@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 /**
 * Description: prints the alphabets
 * Return: 0 on success
