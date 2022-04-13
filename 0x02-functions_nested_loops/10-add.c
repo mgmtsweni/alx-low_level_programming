@@ -3,13 +3,10 @@
 * add - Entry point
 * Description: sum of two intergers
 * Return: Always results.
-* @num1: holds the character under evaluation101~
-* @num2: holds the character under evaluation1
+* @a: holds the character under evaluation101
+* @b: holds the character under evaluation1
 */
-int add(int num1, int num2)
+int add(int a, int b)
 {
-	int sum;
-
-	sum = num1 + num2;
-	return (sum);
+	return (a + b);
 }
