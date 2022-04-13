@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* print_last_digit - Entry point
+* add - Entry point
 * Description: sum of two intergers
 * Return: Always results.
 * @a: holds the character under evaluation101~
