@@ -1,8 +1,9 @@
 #include "main.h"
 /**
-* main - entry point
+* print_times_table - entry point
 * Description: prints the n times table
 * Return: 0 on success
+* @n: holds the character under evaluation1
 */
 void print_times_table(int n)
 {
