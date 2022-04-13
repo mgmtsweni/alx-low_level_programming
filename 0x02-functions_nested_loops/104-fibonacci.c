@@ -6,10 +6,13 @@
 */
 int	main(void)
 {
-	long int i, x = 1, y = 2, sum = 0;
+	unsigned int i, x, y, sum;
 
-	i = 0;
-	while (i < 97)
+	i = 1;
+	x = 1;
+	y = 2;
+	sum = 0;
+	while (i != 98)
 	{
 		printf("%lu, ", x);
 		sum = x + y;
