@@ -1,7 +1,7 @@
 #include "stdio.h"
 /**
 * main - Entry point
-* Description: prints the sum of all the multiples of 3 or 5 
+* Description: prints the sum of all the multiples of 3 or 5
 * Return: Always 0.
 */
 int main(void)
