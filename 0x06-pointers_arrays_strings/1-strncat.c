@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* _strncpy - concatenates two strings.
+* _strncat - concatenates two strings.
 * @src: input string
 * @dest: output string
 * @n: input byte
@@ -10,7 +10,7 @@ char *_strncat(char *dest, char *src, int n)
 {
 	int	i;
 	int	l;
-	
+
 	i = 0;
 	l = 0;
 	while (dest[l])
