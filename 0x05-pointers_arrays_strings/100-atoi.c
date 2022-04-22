@@ -1,10 +1,9 @@
-<<<<<<< HEAD
-#include "holberton.h"
+#include "main.h"
 /**
- * _atoi - int
- * @s: pointer
- * Return: int.
- */
+* _atoi - int
+* @s: pointer
+* Return: int.
+*/
 int _atoi(char *s)
 {
 	int i;
@@ -27,23 +26,4 @@ int _atoi(char *s)
 	}
 	res = sig * res;
 	return (res);
-=======
-#include "main.h"
-/**
-* _atoi - int
-* @s: pointer
-* Return: int.
-*/
-int _atoi(char *s)
-{
-	int i;
-
-	i = 0;
-	while (*s)
-	{
-		i = i * 10 + *s - '0';
-		s++;
-	}
-	return (i);
->>>>>>> 0ec18a94aa7c4265535e520168fc901707256fd8
 }
