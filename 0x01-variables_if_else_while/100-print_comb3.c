@@ -1,32 +1,29 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+
 /**
-* main - entry point
-* Description:  prints all single digit numbers of base 10 starting from 0
-* Return: 0 on success
-*/
+ *main - print 00 to 99 with no duplicate digits or combos: no 11, no 10 (01)
+ *
+ *Return: Always 0 (Success)
+ */
+
 int main(void)
 {
-	int doubles;
-	int singles;
+	int ones;
+	int tens;
 
-	doubles = 0;
-	while (doubles <= 9)
+	for (tens = '0'; tens <= '9'; tens++) /*increment tens*/
 	{
-		singles = doubles;
-		while (singles <= 9)
+		for (ones = (tens + 1); ones <= '9'; ones++) /*one's ten+1*/
 		{
-			putchar(doubles + '0');
-			putchar(singles + '0');
-			if (doubles < 8)
+			putchar(tens);
+			putchar(ones);
+
+			if (tens != '8' || ones != '9') /*print commas*/
 			{
 				putchar(',');
 				putchar(' ');
 			}
-			singles++;
 		}
-		doubles++;
 	}
 	putchar('\n');
 
