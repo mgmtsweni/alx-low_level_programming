@@ -32,16 +32,10 @@ char *str_concat(char *s1, char *s2)
 		i++;
 	}
 	j = 0;
-<<<<<<< HEAD
-	while (j <= limit)
-	{
-		strout[k] = s2[j];
-=======
 	while (i < size && j < s2_len)
 	{
 		concat[i] = s2[j];
 		i++;
->>>>>>> 9b8d57918571fc2b60d96dbe9f78fa76926424e5
 		j++;
 	}
 	concat[i] = '\0';
