@@ -40,10 +40,10 @@ char *str_concat(char *s1, char *s2)
 
 	limit = j;
 	j = 0;
-	while (j <= limit; k++)
+	while (j <= limit)
 	{
 		strout[k] = s2[j];
-		j++
+		j++;
 	}
 	return (strout);
 }
