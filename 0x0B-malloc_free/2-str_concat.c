@@ -7,43 +7,37 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	char *strout;
-	unsigned int i, j, k, limit;
+	char *concat;
+	int s1_len = 0, s2_len = 0;
+	int i, j, size;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
 
-	i = 0;
-	while (s1[i] != '\0')
-		i++;
+	while (s1[s1_len] != '\0')
+	s1_len++;
+	while (s2[s2_len] != '\0')
+	s2_len++;
 
-	j = 0;
-	while (s2[j] != '\0')
-		j++;
-
-	strout = malloc(sizeof(char) * (i + j + 1));
-
-	if (strout == NULL)
-	{
-		free(strout);
+	size = s1_len + s2_len;
+	concat = malloc(sizeof(char) * (size + 1));
+	if (concat == NULL)
 		return (NULL);
-	}
-
-	k = 0;
-	while (k < i)
+	i = 0;
+	while (i < s1_len;)
 	{
-		strout[k] = s1[k];
-		k++;
+		concat[i] = s1[i];
+		i++;
 	}
-
-	limit = j;
 	j = 0;
-	while (j <= limit; k++)
+	while (i < size && j < s2_len; i++, j++)
 	{
-		strout[k] = s2[j];
-		j++
+		concat[i] = s2[j];
+		i++;
+		j++;
 	}
-	return (strout);
+	concat[i] = '\0';
+	return (concat);
 }
