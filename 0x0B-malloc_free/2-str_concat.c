@@ -7,7 +7,7 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	char *strt;
+	char *strout;
 	unsigned int i, j, k, limit;
 
 	if (s1 == NULL)
@@ -23,28 +23,27 @@ char *str_concat(char *s1, char *s2)
 	while (s2[j] != '\0')
 		j++;
 
-	strt = malloc(sizeof(char) * (i + j + 1));
+	strout = malloc(sizeof(char) * (i + j + 1));
 
-	if (strt == NULL)
+	if (strout == NULL)
 	{
-		free(strt);
+		free(strout);
 		return (NULL);
 	}
 
 	k = 0;
 	while (k < i)
 	{
+		strout[k] = s1[k];
 		k++;
-		strt[k] = s1[k];
 	}
 
 	limit = j;
 	j = 0;
-	while (j <= limit)
+	while (j <= limit; k++)
 	{
-		k++;
-		j++;
-		strt[k] = s2[j];
+		strout[k] = s2[j];
+		j++
 	}
-	return (strt);
+	return (strout);
 }
