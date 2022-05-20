@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * show_first - executes before the main function
+ * startup - executes before the main function
  * Return: nothing
  */
 void startup(void)
