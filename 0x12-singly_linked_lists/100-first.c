@@ -2,6 +2,7 @@
 
 /**
  * show_first - executes before the main function
+ *
  * Return: nothing
  */
 void startup(void)
