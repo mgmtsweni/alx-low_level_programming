@@ -1,5 +1,4 @@
 #include "hash_tables.h"
-
 /**
  * shash_table_create - creates a hash table
  * @size: size of the array of linked list in the table
