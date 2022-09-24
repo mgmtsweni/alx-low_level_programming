@@ -3,6 +3,7 @@
 
 
 def island_perimeter(grid):
+    """Calculate perimeter of grid"""
     p = 0
     for row in range(len(grid)):
         for col in range(len(grid[0])):
