@@ -1,9 +1,9 @@
 #include "hash_tables.h"
 /**
- * free_list - frees a linked list
+ * free_list_s - frees a linked list
  * @head: hash_node_t list to be freed
  */
-void free_list(hash_node_t *head)
+void free_list_s(hash_node_t *head)
 {
 	hash_node_t *temp;
 
@@ -29,7 +29,7 @@ void hash_table_delete(hash_table_t *ht)
 		return;
 
 	for (i = 0; i < ht->size; i++)
-		free_list(ht->array[i]);
+		free_list_s(ht->array[i]);
 	free(ht->array);
 	free(ht);
 }

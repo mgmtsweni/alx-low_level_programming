@@ -13,7 +13,6 @@ void print_list(hash_node_t *h)
 		h = h->next;
 	}
 }
-
 /**
  * hash_table_print - prints a hash table
  * @ht: hash table to print

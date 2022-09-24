@@ -8,7 +8,7 @@
 
 /**
  * struct hash_node_s - Node of a hash table
- * @key: The key, string. It's unique in the HashTable
+ * @key: The key, string. It's unique in the Hashtable
  * @value: The value corresponding to a key
  * @next: A pointer to the next node of the List
  */
@@ -59,7 +59,6 @@ typedef struct shash_node_s
 	 struct shash_node_s *sprev;
 	 struct shash_node_s *snext;
 } shash_node_t;
-
 /**
  * struct shash_table_s - Sorted hash table data structure
  * @size: The size of the array
