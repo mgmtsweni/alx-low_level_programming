@@ -1,6 +1,6 @@
 #include "search_algos.h"
 /*
-* liner_search - searches for a int value in a
+* liner_search - searches for a int value in a v array
 * @array - a pointer to the first element
 * @size - size of the array
 * @value - value to be search
