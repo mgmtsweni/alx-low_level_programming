@@ -1,12 +1,12 @@
 #include "search_algos.h"
 /*
-*liner_search - performs advanced binary search
-*@array - a pointer to the first element
-*@size - size of the array
-*@value - value to be search
-*return - first index where value is located
+* adva_binary - performs advanced binary search
+* @array: a pointer to the first element
+* @size: size of the array
+* @value: value to be search
+* Return: !array || array is NULL retrun -1 
 */
-int *_advanced_binary(int *array, size_t size, int value)
+int adva_binary(int *array, size_t size, int value)
 {
 	size_t i = 0;
 
@@ -19,13 +19,13 @@ int *_advanced_binary(int *array, size_t size, int value)
 	if (array[i] == value)
 	{
 		if (i)
-			return (_advanced_binary(array, i + 1, value));
+			return (adva_binary(array, i + 1, value));
 		return (array + i);
 	}
 	else if (array[i] > value)
-		return (_advanced_binary(array, i + 1, value));
+		return (adva_binary(array, i + 1, value));
 	else
-		return (_advanced_binary(array + i + 1, size - i - 1, value));
+		return (adva_binary(array + i + 1, size - i - 1, value));
 }
 
 /**
@@ -37,7 +37,7 @@ int *_advanced_binary(int *array, size_t size, int value)
  */
 int advanced_binary(int *array, size_t size, int value)
 {
-	int *a = _advanced_binary(array, size, value);
+	int *a = adva_binary(array, size, value);
 
 	if (!a)
 		return (-1);

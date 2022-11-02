@@ -1,10 +1,10 @@
 #include "search_algos.h"
 /*
-* liner_search - searches for a int value in a v array
-* @array - a pointer to the first element
-* @size - size of the array
-* @value - value to be search
-* return (-1) if not found || (value) if it's found
+* binary_search - searches for a int value in a v array
+* @array: a pointer to the first element
+* @size: size of the array
+* @value: value to be search
+* Return: !array || array is NULL retrun -1 
 */
 int binary_search(int *array, size_t size, int value)
 {
