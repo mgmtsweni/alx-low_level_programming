@@ -12,6 +12,7 @@ int adva_binary(int *array, size_t size, int value)
 
 	if (!size || !array)
 		return (NULL);
+
 	for (printf("Searching in array: "); i < size; i++)
 		printf("%d%s", array[i], i + 1 == size ? "\n" : ", ");
 
@@ -37,10 +38,10 @@ int adva_binary(int *array, size_t size, int value)
  */
 int advanced_binary(int *array, size_t size, int value)
 {
-	int *a = adva_binary(array, size, value);
+	int *func = adva_binary(array, size, value);
 
-	if (!a)
+	if (!func)
 		return (-1);
 	else
-		return (a - array);
+		return (func - array);
 }
